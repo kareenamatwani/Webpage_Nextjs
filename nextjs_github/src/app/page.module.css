@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,100;1,200;1,400;1,500&display=swap');
+
+.container {
+  position: relative;
+  max-width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* Fallback background color */
+}
+
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.navLinks ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333; 
+}
+
+.navLinks ul li a:hover {
+  background-color: skyblue;
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.navLinks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+.dropdown ul{
+  display: none;
+}
+
+.navLinks li {
+  position: relative;
+  margin-right: 20px; 
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+  min-width: 200px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent li {
+  position: relative;
+}
+
+.dropdown2:hover{
+  display: block;
+}
+
+.dropdownContent1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.dropdownContent ul {
+  display: none;
+ 
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.navLinks li:hover > .dropdownContent ul {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  margin-left: 0;
+}
+.dropdown1:hover .dropdownContent {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  margin-left: 0;
+}
+/* Text container styles */
+.textContainer {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+.carouselText {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.viewProjectButton {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Logo styles */
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust the top positioning as needed */
+  left: 20px; /*
+  
+   Adjust the left positioning as needed */
+   width: 50px;
+}
+.whatWeDo {
+  padding: 20px;
+  text-align: center;
+}
+
+.whatWeDo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card p {
+  margin: 10px 0;
+}
+/* contact section */
+
+.contactSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(201, 238, 255);
+  padding: 20px;
+}
+
+.contactSection p {
+  /* margin-right: 100px; */
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contactSection button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .contactSection{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+  }
+  .contactSection p{
+    text-align: center;
+  }
+}
+/*About us section css*/
+.aboutUsSection {
+  align-items: center;
+  padding:100px;
+}
+.aboutUsImage img {
+  width: 100%;
+  height: 400px;
+
+}
+
+.aboutUsContent {
+ /* Make the content take up 50% of the section */
+  padding: 20px;
+  display:flex;
+}
+
+.aboutUsContent h1 {
+  font-size: 50px;
+  flex: 1; /* Take up 50% of the width */
+}
+
+.aboutUsContent p {
+  font-size: 18px;
+  line-height: 1.5;
+  flex: 1; /* Take up 50% of the width */
+}
+@media screen and (max-width: 768px) {
+  .aboutUsContent {
+    flex-direction: column; /* Vertical layout for smaller screens */
+    padding: 0;
+    margin: 0;
+  }
+  .aboutUsContent h1 {
+    font-size: 25px;
+    width: 100%; /* Full width for text on smaller screens */
+  }
+  .aboutUsContent p {
+    font-size: 18px;
+    width: 100%; /* Full width for text on smaller screens */
+  }
+  .aboutUsImage img {
+    width: 100%; /* Make the image responsive for smaller screens */
+  }
+}
+
+/*initiatives section css*/
+
+.customBackgroundSection {
+  background-color: rgb(201, 238, 255);
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.customBackgroundText {
+  max-width: 100%;
+  padding: 30px;
+  display: flex;
+
+}
+
+.customBackgroundText h2 {
+  font-size: 44px;
+  flex: 1;
+}
+
+.customBackgroundText p {
+  font-size: 18px;
+  text-align: left;
+  padding-right:30px ;
+  flex:1;
+}
+
+.customCardContainer {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 40px;
+}
+
+.customCard {
+  background: #ffffff;
+  padding: 30px;
+  margin: 10px; 
+  text-align: left;
+}
+.customCard img {
+  max-width: 100%; /* Make sure the image fits within the card */
+  height: auto;
+   border: solid 2px;
+  margin-bottom: 10px; /* Add some spacing between the image and text */
+}
+.customCard p {
+  font-size: 18px;
+  margin-bottom: 10px;
+ 
+}
+
+.customCard button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .customBackgroundText {
+    flex-direction: column; /* Stack the title and content vertically */
+    text-align: center;
+  }
+
+  .customBackgroundText h2 {
+    font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  .customBackgroundText p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    text-align: left;
+  }
+
+  .customCardContainer {
+    flex-direction: column; /* Stack the cards vertically */
+  }
+
+  .customCard {
+    padding: 20px; /* Reduce card padding for smaller screens */
+    margin: 20px;
+  }
+
+  .customCard p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .customCard button {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+}
+
+/*News Section*/
+.newsSection {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.newsSection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.newsSection p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.newsCarousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.newsCarouselItem {
+  flex: 1;
+  max-width: 23%; /* Adjust this value as needed to fit 4 items in a row */
+  margin-bottom: 20px;
+}
+
+.newsCarouselItem img {
+  width: 100%;
+  height: auto;
+  border:solid 2px;
+}
+
+.newsCarouselItem p {
+  font-size: 14px;
+  text-align: left;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .newsCarousel {
+    padding: 20px; /* Reduce padding for smaller screens */
+    flex-direction: column; /* Display items vertically for smaller screens */
+  }
+
+  .newsCarouselItem {
+    max-width: 100%; /* Expand items to full width on smaller screens */
+  }
+
+  .newsCarouselItem p {
+    font-size: 16px; /* Increase font size for readability on smaller screens */
+  }
+}
+/*Stories Section*/
+.storiesSection {
+  display: flex;
+  width: 100%;
+  padding: 50px;
+}
+
+.storyImage {
+  flex: 1;
+  border: solid 2px;
+  position: relative;
+}
+
+.storyContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWithText {
+  position: relative;
+}
+
+.imageWithText img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.textContent {
+  position: absolute;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Background color for text container */
+  color: #fff; /* Text color */
+  padding: 20px;
+}
+
+.textContent h2 {
+  font-size: 24px;
+}
+
+.textContent p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+/*stories and client section*/
+.storiesSection {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.storyImage {
+  flex: 1;
+  position: relative;
+}
+
+.storyContent {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.storyContent h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.storyContent p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.clientsSection {
+  margin-top: 40px;
+ 
+}
+
+.clientsSection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.clientsSection p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.clientLogos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientLogos img {
+  width: 70px;
+  height: 70px;
+}
+
+/*Footer*/
+.footer {
+  background-color: rgb(228, 247, 255);
+  padding: 20px;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.firstRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; 
+}
+
+.footerLogo img {
+  margin-right: 10px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerLinks div {
+  margin-right: 20px;
+}
+
+.footerLinks p {
+  font-weight: bold;
+}
+
+.footerLinks a {
+  display: block;
+  color: #000;
+  margin-top: 5px;
+}
+
+.socialMedia {
+  text-align: left;
+}
+
+.socialIcons img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.subscribe {
+  margin-top: 20px;
+  width: 100%; 
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+.subscribe input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.subscribe button {
+  padding: 7px;
+  background-color: #007bff;
+  color: #fff;
+  border: solid 0px;
+  cursor: pointer;
+}
+
+.addresses {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.addresses div {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.addresses p {
+  margin-left: 5px;
+}
+
+.copyright {
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
+  width: 100%; 
+  display: flex;
+  
+  }
+  
+@media (max-width: 768px) {
+  .firstRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .storiesSection{
+    flex-direction: column;
+      }
+
+  .footerLinks div {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+.addresses{
+  flex-direction: column;
+}
+  .subscribe input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
