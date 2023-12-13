@@ -1,4 +1,4 @@
-# Next.js Project
+# Next.js Webpage
 
 This is a sample Next.js project with a basic structure for a website. It includes a homepage with a navigation bar, sections for "What We Do," "Initiatives," "News," "Stories," and "Clients."
 
